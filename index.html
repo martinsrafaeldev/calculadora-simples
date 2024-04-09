@@ -1,0 +1,28 @@
+<body>
+    <input id="input1" />
+    <input id="input2" />
+    
+    <button id="button1">Somar</button>
+    <button id="button2">Subtrair</button>
+    
+    <h3>Resultado:</h3>
+    <p id="result"></p>
+   </body>
+    
+   <script>
+    const input1 = document.getElementById("input1");
+    const input2 = document.getElementById("input2");
+    
+    function soma() {
+      document.getElementById("result").innerText =
+        Number(input1.value) + Number(input2.value);
+    }
+    
+    function subtracao() {
+      document.getElementById("result").innerText =
+        Number(input1.value) - Number(input2.value);
+    }
+    
+    document.getElementById("button1").onclick = soma;
+    document.getElementById("button2").onclick = subtracao;
+   </script>
